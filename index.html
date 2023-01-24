@@ -45,14 +45,28 @@
       <form class="p-2" role="search">
         <input type="search" class="form-control" placeholder="Search courses..." aria-label="Search">
       </form>
-      <button type="button" class="btn btn-outline-light h-auto"><i class="bi bi-cart"></i></button>
+      <button type="button" class="btn btn-outline-light h-auto" data-bs-toggle="offcanvas" data-bs-target="#cart" aria-expanded="false"
+      aria-controls="#cartoffcanvas"><i class="bi bi-cart"></i></button>
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" aria-labelledby="cartOffcanvas" id="cart">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="cartOffcanvas">Your cart:</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul>
+              <li>Nothing here...</li>
+            </ul>
+          </div>
+        </div>
     </div>
   </header>
 
   <!--CATALOGO-->
   <main>
+    
+    <!-- CLASES INDIVIDUALES -->
     <h1 class="text-center display-5 my-4">Individual Classes</h1>
-    <div class="row row-cols-1 row-cols-md-3 g-4 mx-0">
+    <div class="row row-cols-1 row-cols-md-3 g-4 mx-1">
       <div class="col">
         <div class="card">
           <div class="card-body d-flex flex-column align-items-center">
@@ -81,6 +95,43 @@
         </div>
       </div>
     </div>
+
+    <!-- CLASES INTENSIVAS -->
+    <h1 class="text-center display-5 my-4">Intensive Classes</h1>
+
+
+    <ul class="nav nav-tabs d-flex justify-content-around flex-nowrap">
+      <li class="nav-item">
+        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Group classes
+        </a>
+        <div class="collapse" id="collapseExample1">
+          <div class="card card-body">
+            We offer discounts up to 15% for each sum of 3 people!
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+          3 month plan
+        </a>
+        <div class="collapse" id="collapseExample2">
+          <div class="card card-body">
+            Get a total of 10% discount! Check availabity.
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+          Exams tutoring
+        </a>
+        <div class="collapse" id="collapseExample3">
+          <div class="card card-body">
+            One month intensive tutoring prior to level-class tests!
+          </div>
+        </div>
+      </li>
+    </ul>
 
     <div class="row row-cols-1 row-cols-md-3 g-4 mt-2 mx-0">
       <div class="col">
