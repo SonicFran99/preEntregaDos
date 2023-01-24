@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+body {
+  background-image: url(/img/backdrop.png);
+  backdrop-filter: blur(2px);
+  object-fit: fill;
+}
+
 /* HEADER */
 header {
   font-family: "Raleway", sans-serif;
@@ -11,6 +17,7 @@ header {
 header #oneClick {
   width: calc(150px + 1.5vw);
   height: auto;
+  transition: 0.5s;
 }
 header #oneClick:hover {
   transform: scale(110%);
@@ -20,6 +27,7 @@ header h1 {
   font-weight: bold;
   color: #ffde59;
   text-shadow: white 2px 2px 5px;
+  transition: 0.5s;
 }
 header h1:hover {
   transform: scale(110%);
@@ -35,9 +43,30 @@ header button.btn:hover {
 }
 
 /* MAIN */
+main h1.display-5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  color: #87189d;
+  text-shadow: #ffde59 2px 2px 5px;
+  transition: 0.5s;
+}
+main h1.display-5:hover {
+  transform: scale(110%);
+  transition: 0.5s;
+}
 main div.card {
   background-color: #87189d;
-  filter: opacity(80%);
+  opacity: 75%;
+  border: #87189d 1px solid;
+  color: #ffde59;
+}
+main div.card button.btn-outline-primary {
+  color: #ffde59;
+  border: #ffde59 1px solid;
+}
+main div.card button.btn-outline-primary:hover {
+  background-color: #ffde59;
+  color: #87189d;
 }
 
 /* FOOTER */
@@ -49,19 +78,23 @@ footer {
 }
 footer div #oneClickLogo {
   width: calc(25px + 5%);
+  transition: 0.5s;
 }
 footer div #oneClickLogo:hover {
-  transform: scale(120%);
+  transform: scale(130%);
   transition: 0.5s;
 }
 footer div span {
   text-shadow: white 2px 2px 3px;
 }
+footer ul li {
+  transition: 0.5s;
+}
 footer ul li a i.bi {
   color: #ffde59;
 }
 footer ul li:hover {
-  transform: scale(120%);
+  transform: scale(130%);
   transition: 0.5s;
 }
 
