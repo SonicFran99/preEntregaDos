@@ -26,7 +26,7 @@ header {
     }
   }
   h1 {
-    font-weight: bold;
+    font-weight: bolder;
     color: #ffde59;
     text-shadow: white 2px 2px 5px;
     transition: 0.5s;
@@ -63,6 +63,10 @@ main {
     opacity: 75%;
     border: #87189d 1px solid;
     color: #ffde59;
+
+    div.card-body {
+      opacity: 100%;
+    }
     button.btn-outline-primary {
       color: #ffde59;
       border: #ffde59 1px solid;
@@ -89,7 +93,7 @@ footer {
       }
     }
     span {
-      text-shadow: white 2px 2px 3px;
+      font-weight: bold;
     }
   }
   ul {
