@@ -1,5 +1,5 @@
 //BIENVENIDA:
-alert("Welcome, it's Language Time!")
+alert("Welcome to One Click Academy!")
 
 //SELECTOR DE IDIOMA:
 let idiomaElegido

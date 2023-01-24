@@ -5,12 +5,6 @@
   padding: 0;
 }
 
-body {
-  background-image: url(/img/backdrop.png);
-  backdrop-filter: blur(2px);
-  object-fit: fill;
-}
-
 
 /* HEADER */
 
@@ -22,7 +16,7 @@ header {
     height: auto;
     transition: 0.5s;
     &:hover {
-      @include expand (scale(110%), 0.5s);
+      @include expand (scale(120%), 0.5s);
     }
   }
   h1 {
@@ -31,7 +25,7 @@ header {
     text-shadow: white 2px 2px 5px;
     transition: 0.5s;
     &:hover {
-      @include expand (scale(110%), 0.5s); 
+      @include expand (scale(120%), 0.5s); 
     }
   }
   form {
@@ -60,7 +54,6 @@ main {
   }
   div.card {
     background-color: #87189d;
-    opacity: 75%;
     border: #87189d 1px solid;
     color: #ffde59;
 

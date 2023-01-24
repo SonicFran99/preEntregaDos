@@ -3,12 +3,6 @@
   padding: 0;
 }
 
-body {
-  background-image: url(/img/backdrop.png);
-  backdrop-filter: blur(2px);
-  object-fit: fill;
-}
-
 /* HEADER */
 header {
   font-family: "Raleway", sans-serif;
@@ -20,7 +14,7 @@ header #oneClick {
   transition: 0.5s;
 }
 header #oneClick:hover {
-  transform: scale(110%);
+  transform: scale(120%);
   transition: 0.5s;
 }
 header h1 {
@@ -30,7 +24,7 @@ header h1 {
   transition: 0.5s;
 }
 header h1:hover {
-  transform: scale(110%);
+  transform: scale(120%);
   transition: 0.5s;
 }
 header form input.form-control {
@@ -56,7 +50,6 @@ main h1.display-5:hover {
 }
 main div.card {
   background-color: #87189d;
-  opacity: 75%;
   border: #87189d 1px solid;
   color: #ffde59;
 }
