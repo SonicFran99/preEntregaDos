@@ -1,0 +1,77 @@
+@import "_partials.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+
+header {
+  font-family: 'Raleway', sans-serif;
+  background-color: #87189d;
+  #oneClick {
+    width: calc(150px + 1.5vw);
+    height: auto;
+    &:hover {
+      @include expand (scale(110%), 0.5s);
+    }
+  }
+  h1 {
+    font-weight: bold;
+    color: #ffde59;
+    text-shadow: white 2px 2px 5px;
+    &:hover {
+      @include expand (scale(110%), 0.5s); 
+    }
+  }
+  form {
+    input.form-control {
+      background-color: white;
+      color: black;
+    }
+  }
+  button.btn:hover {
+    background-color: #ffde59;
+    color: #87189d;
+  }
+}
+
+/* MAIN */
+main {
+  div.card {
+    background-color: #87189d;
+    filter: opacity(80%);
+  }
+}
+
+/* FOOTER */
+footer {
+  background-color: #323437;
+  color: #ffde59;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  div {
+    #oneClickLogo {
+      width: calc(25px + 5%);
+      &:hover {
+        @include expand (scale(120%), 0.5s);
+      }
+    }
+    span {
+      text-shadow: white 2px 2px 3px;
+    }
+  }
+  ul {
+    li{
+      a {
+        i.bi {
+          color: #ffde59;
+        }
+      }
+      &:hover {
+        @include expand (scale(120%), 0.5s);
+      }
+    }
+  }
+}

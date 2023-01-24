@@ -1,0 +1,4 @@
+@mixin expand ($transform, $transition) {
+  transform: $transform;
+  transition: $transition;
+}
