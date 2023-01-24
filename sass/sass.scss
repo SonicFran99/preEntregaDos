@@ -24,7 +24,7 @@ header {
     }
   }
   h1 {
-    font-weight: bolder;
+    font-weight: 400;
     color: #ffde59;
     text-shadow: white 2px 2px 5px;
     transition: 0.5s;
@@ -58,10 +58,16 @@ main {
   }
   div.card {
     background-color: transparent;
-    border: #87189d 1px solid;
+    border: gray 1.2px solid;
     color: #87189d;
     div.card-body {
-      opacity: 100%;
+      p.card-text {
+        color: gray;
+      }
+      h1 {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      }
     }
     button.btn-outline-primary {
       color: #87189d;

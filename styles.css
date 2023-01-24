@@ -23,7 +23,7 @@ header #oneClick:hover {
   transition: 0.5s;
 }
 header h1 {
-  font-weight: bolder;
+  font-weight: 400;
   color: #ffde59;
   text-shadow: white 2px 2px 5px;
   transition: 0.5s;
@@ -55,11 +55,15 @@ main h1.display-5:hover {
 }
 main div.card {
   background-color: transparent;
-  border: #87189d 1px solid;
+  border: gray 1.2px solid;
   color: #87189d;
 }
-main div.card div.card-body {
-  opacity: 100%;
+main div.card div.card-body p.card-text {
+  color: gray;
+}
+main div.card div.card-body h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
 }
 main div.card button.btn-outline-primary {
   color: #87189d;
