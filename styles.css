@@ -55,7 +55,7 @@ main h1.display-5:hover {
 }
 main div.card {
   background-color: transparent;
-  border: gray 1.2px solid;
+  border: gray 1.3px solid;
   color: #87189d;
 }
 main div.card div.card-body p.card-text {
